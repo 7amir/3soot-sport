@@ -1,0 +1,111 @@
+header {
+  .header-main {
+    background: #0a2031;
+    padding: 7px 0;
+
+    .logo {
+      max-width: 292px;
+    }
+
+    .form__search {
+      position: relative;
+      width: 108%;
+
+      .input__search {
+        width: 100%;
+        border: 0;
+        padding: 7px 23px;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+
+      i, svg {
+        position: absolute;
+        color: #000;
+        left: 12px;
+        top: 9px;
+      }
+    }
+
+    .header-btns {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      .link__img-basket {
+        width: 22px;
+        margin-left: 15px;
+        position: relative;
+
+        span {
+          position: absolute;
+          background: #2094f3;
+          color: #fff;
+          border-radius: 50%;
+          padding: 2px 6px 0;
+          font-size: 11px;
+          top: -37%;
+          left: -54%;
+          opacity: 0.9;
+        }
+      }
+
+      .header-btn {
+        .rebate {
+          border-radius: 3px;
+          background: transparent;
+          color: #fff;
+          margin-right: 10px;
+          font-size: 13px;
+          padding: 6px 32px;
+          border: 1px solid #2094f3;
+        }
+
+        .login {
+          border: 0;
+          border-radius: 3px;
+          margin-right: 10px;
+          padding: 6px 11px;
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .header-nav {
+    background: #f9f9f9;
+    border-bottom: 1px solid #f0f0f0;
+    position: absolute;
+    width: 100%;
+    transition: all .3s ease-out;
+
+    .list__header-nav {
+      margin: 0;
+
+      li {
+        display: inline-block;
+
+        a {
+          display: block;
+          padding: 12px;
+          font-size: 14px;
+          color: #0c0c0c;
+
+          .svg-inline--fa.fa-angle-down {
+            color: #777;
+            font-size: 12px;
+            position: relative;
+            top: 4px;
+            right: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:992px){
+
+  
+}

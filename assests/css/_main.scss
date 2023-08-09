@@ -1,0 +1,220 @@
+main {
+  .icon-boxes-img {
+    background: #fff;
+    margin: 4rem 0;
+
+    .icon-box-img {
+      margin: 0 7rem;
+
+      .icon-box {
+        text-align: center;
+
+        .icon-img {
+          width: 75px;
+          margin: 0 auto 1rem;
+        }
+
+        .img-post {
+          width: 100px;
+        }
+
+        .icon-text {
+          h3 {
+            font-size: 21px;
+            font-family: vazir-bo;
+            margin-bottom: 1.4rem;
+          }
+
+          p {
+            font-family: vazir-li;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .cards-new-product {
+    .cards-selling {
+      .card-selling {
+        .img-selling {
+          width: 209px;
+        }
+      }
+    }
+  }
+
+  .slider-images-buy {
+    background: #fff;
+    margin: 4rem 0;
+
+    .slider-images {
+      overflow: auto;
+      white-space: nowrap;
+      display: flex;
+      justify-content: space-between;
+
+      .slider-image {
+        width: 340px;
+        display: inline-block;
+
+        a {
+          display: block;
+        }
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+        scroll-snap-align: center;
+      }
+    }
+  }
+
+}
+
+.modal-basket {
+  position: fixed;
+  top: 27%;
+  right: 24%;
+  background: #0a2031;
+  color: #fff;
+  border-radius: 6px;
+  width: 52%;
+  display: none;
+
+  .basket {
+    margin: 0rem 3rem;
+    max-height: 300px;
+    overflow-y: scroll;
+
+    .table__new-basket {
+      position: relative;
+      margin: 2.5rem 0 1rem;
+
+      thead {
+        tr {
+          border-bottom: 2px solid #ddd;
+
+          th {
+            width: 1%;
+            padding: 10px 0;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 2px solid #ddd;
+
+          td {
+            padding: 10px 0;
+
+            a {
+              display: block;
+              width: 70px;
+            }
+
+            h3 {
+              font-size: 20px;
+              font-family: vazir-num;
+            }
+
+            .input__add {
+              display: flex;
+              position: relative;
+
+              .input-add {
+                border: 1px solid #ddd;
+                border-left: 0;
+                border-radius: 0 50% 50% 0;
+                color: #666;
+                font-size: 18px;
+              }
+
+              .input-num {
+                width: 15%;
+                text-align: center;
+                border: 1px solid #ddd;
+                box-shadow: inset 0 0px 2px rgba(0, 0, 0, .1);
+                color: #666;
+                outline: 0;
+              }
+
+              .input-subtract {
+                border: 1px solid #ddd;
+                border-right: 0;
+                border-radius: 50% 0 0 50%;
+                color: #666;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .icon-delete {
+      i, svg {
+        position: absolute;
+        top: 0;
+        left: 11%;
+        border: 1px solid #666;
+        color: #666;
+        padding: 3px 6px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+
+        &:hover {
+          border: 1px solid red;
+          color: red;
+        }
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .basket-buying {
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+
+    .btn__buying {
+      background: transparent;
+      border: 1px solid #74b9ff;
+      color: #74b9ff;
+      padding: 4px 40px;
+      border-radius: 99px;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        background: #74b9ff;
+        color: #fff;
+      }
+    }
+
+    .price {
+      margin-right: 1rem;
+      font-family: vazir-num;
+    }
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 5%;
+    right: 1.3%;
+    font-size: 23px;
+    padding: 0 12px 4px;
+    border-radius: 50%;
+    font-family: cursive;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background: #143148;
+    }
+  }
+}

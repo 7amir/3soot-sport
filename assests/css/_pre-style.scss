@@ -1,0 +1,186 @@
+* {
+  direction: rtl;
+}
+
+@font-face {
+  font-family: vazir-me;
+  src: url('../../componets/vazirmatn-v33.003/fonts/ttf/Vazirmatn-Medium.ttf');
+}
+
+@font-face {
+  font-family: vazir-re;
+  src: url('../../componets/vazirmatn-v33.003/fonts/ttf/Vazirmatn-Regular.ttf');
+}
+
+@font-face {
+  font-family: vazir-bo;
+  src: url('../../componets/vazirmatn-v33.003/fonts/ttf/Vazirmatn-Bold.ttf');
+}
+
+@font-face {
+  font-family: vazir-li;
+  src: url('../../componets/vazirmatn-v33.003/fonts/ttf/Vazirmatn-Light.ttf');
+}
+
+@font-face {
+  font-family: vazir-num;
+  src: url('../../componets/vazirmatn-v33.003/misc/Farsi-Digits/fonts/ttf/Vazirmatn-FD-Bold.ttf');
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  max-width: 1120px !important;
+}
+
+.row {
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+i {
+  font-family: fontawesome;
+}
+
+h1,
+button,
+span,
+p,
+h2,
+h3,
+h5,
+a,
+input,
+table {
+  font-family: vazir-re;
+}
+
+// اسکرول بار اختصاصی
+.scroll-bar {
+  position: fixed;
+  height: 3px;
+  width: 0%;
+  top: 0;
+  background: #4bfd41;
+  z-index: 999999;
+}
+
+// اسلایدر
+.cards-best-selling {
+  background: #f2f5fa;
+  padding: 0.5rem 0;
+  position: relative;
+
+  h2 {
+    text-align: center;
+    font-family: 'vazir-bo';
+    color: #495a61;
+    margin: 2rem 0 0;
+    font-size: 26px;
+  }
+
+  .wrapper {
+    width: 64.4%;
+    overflow: hidden;
+
+    .cards-selling {
+      white-space: nowrap;
+      padding: 1.6rem 0;
+      width: 100%;
+      transition: all 1s ease;
+  
+      .card-selling {
+        display: inline-block;
+        margin-left: .6rem;
+        background: #fff;
+        border-radius: 5px;
+        border: 1px solid #e8e8e8;
+  
+        a{
+          color: #333;
+  
+          .img-selling {
+            width: 264px;
+          }
+    
+          .text-selling {
+            text-align: center;
+            padding: 0 10px;
+    
+            span {
+              font-size: 14px;
+              font-family: vazir-li;
+              display: block;
+              padding-bottom: 1rem;
+            }
+    
+            h3 {
+              font-size: 14px;
+              font-family: vazir-num;
+              padding-bottom: 1rem;
+            }
+          }
+        }
+  
+        .btn__basket {
+          display: block;
+          margin: 0 auto;
+          border: none;
+          border-radius: 5px;
+          font-size: 13px;
+          margin-bottom: 1.5rem;
+          border: 1px solid #fff;
+          transition: all .4s ease-out;
+          display: block;
+          padding: 7px 16px;
+          color: #333;
+  
+          &:hover {
+            border: 1px solid #111;
+          }
+        }
+      }
+  
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+
+  .btn__next,
+  .btn__prev {
+    border: 1px solid #7a7a7a;
+    background: transparent;
+    font-size: 20px;
+    padding: 7px 14px 4px;
+    border-radius: 50%;
+    color: #7a7a7a;
+    position: absolute;
+    top: 52%;
+
+    &:hover {
+      background: #0a2031;
+      color: #fff;
+    }
+  }
+
+  .btn__next {
+    right: 14.5%;
+  }
+
+  .btn__prev {
+    left: 14.5%;
+  }
+}
